@@ -52,3 +52,7 @@ Each project file has the same sections:
 ## About the gaps
 
 Some of the research behind these projects happened in conversation and never reached a repository. Rather than reconstruct it from memory, each project file lists those topics under **Gaps** with a date so they can be written up properly later. Everything else here comes from the project repositories and dated project notes.
+
+## Related
+
+Part of a set of three: this repo is the research, [plan-orchestrator](https://github.com/aeiouvcode/plan-orchestrator) is the working method (agent contract, state templates, orchestration rules), and [agent-specific-notes](https://github.com/aeiouvcode/agent-specific-notes) is the failure log.

@@ -5,15 +5,18 @@
 
 ## Inspiration
 
-An isometric miniature-city post on X (2026-09-21), made for the owner's own town, Patiala, Punjab.
+An isometric miniature-city post on X (2026-09-21), made for the owner's own town. Asked where: "Patiala, punjab, the rest is your guess."
 
 ## References
 
 - OpenStreetMap data around Qila Mubarak: 96 building footprints, 155 road segments.
+- Google Street View coverage probe (2026-09-21): 112 of 169 probes around Qila Mubarak, Adalat Bazaar and Dharampura Bazaar returned panoramas.
 
 ## Findings
 
-- A photoreal version was requested. A Street View coverage probe found 112 of 169 points around Qila Mubarak, Adalat Bazaar and Dharampura Bazaar returned panoramas. That version is blocked on a Google Maps API key.
+- The owner rejected the first stylized pass: "Not realistic, use google street view." The photoreal version is blocked on a Google Maps API key from him.
+- v13 (2026-09-22) made the Qila its own precinct: gate, cupolas, arcades, courtyards. v14 live 2026-09-23.
+- Still behind the reference: flat ground, buildings need stepped massing and balconies, Qila massing too regular.
 
 ## Technical decisions
 
@@ -23,3 +26,4 @@ An isometric miniature-city post on X (2026-09-21), made for the owner's own tow
 ## Gaps
 
 - The source X post link is in chat history (2026-09-21 17:57).
+- Photoreal rebuild: waiting on the owner's Google Maps API key.

@@ -5,24 +5,28 @@
 
 ## Inspiration
 
-PocketPal and google-ai-edge/gallery (GitHub). Brief (2026-09-19): on-device inference for any model on any phone, clearly better than those.
+PocketPal and google-ai-edge/gallery (GitHub). Brief (2026-09-19): "Make on device edge ai inference for any ai, any phone, every mobile compatibility" - "Like this but better", then "But make it 100 times better".
 
 ## References
 
 - google-ai-edge/gallery: https://github.com/google-ai-edge/gallery
 - PocketPal (mobile app): the on-device chat baseline.
-- AgentCloak Desktop (incountry.com): privacy-cloak pattern.
+- AgentCloak Desktop (incountry.com product page, sent by the owner): privacy-cloak pattern of synthetic twins substituted for real identifiers before anything leaves the device.
 
 ## Findings
 
 - A device probe that tells users honestly what their phone can run is worth more than a long model list.
 - Model downloads failed through the app's own CSP because the model host redirects to a CDN. Fixed by allowing the exact redirect targets.
+- The owner screenshotted a raw error and said "Felt like i downloaded malware". Lesson recorded: error handling is a design requirement. "Make it secure" then triggered a full security pass.
+- Privacy cloak layer: engine PASS, end-to-end PARTIAL because cloud routing is not built.
+- Selected by Open Muse as its on-device engine in the inter-project compatibility pilot, verified live.
 
 ## Technical decisions
 
 - WebGPU with a WASM fallback, so it runs on any phone.
 - Models are cached for offline use, with no backend, key or account.
 - Engine files are pinned and integrity-checked, and no remote code runs.
+- 100x phase 1 added Pocket Lab benchmarking and bring-your-own-model.
 
 ## Gaps
 
